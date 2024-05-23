@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/playerChoice"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/computerChoice"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_launcher_foreground" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/buttonRock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Камень"
+            android:background="@drawable/button_selector"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/buttonScissors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ножницы"
+            android:background="@drawable/button_selector"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/buttonPaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Бумага"
+            android:background="@drawable/button_selector"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/buttonLizard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ящерица"
+            android:background="@drawable/button_selector"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/buttonSpock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Спок"
+            android:background="@drawable/button_selector"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Игра"
+        android:background="@drawable/button_selector"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>
